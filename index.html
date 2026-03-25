@@ -2,41 +2,73 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Моє Резюме</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Саджениця Вікторія</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Саджениця Вікторія</h1>
     <p><b>Посада:</b> Початкуючий веб-розробник</p>
-    <p><b>Email:</b> viktoriia.sadzhenytsia.kbz.2024@lpnu.ua</p>
+    <p><b>Email:</b> <a href="mailto:viktoriia.sadzhenytsia.kbz.2024@lpnu.ua">viktoriia.sadzhenytsia.kbz.2024@lpnu.ua</a></p>
 
-    <hr> <h2>Про себе</h2>
-    <p>Я студентка, яка вивчає інформаційні технології та основи вебу.</p>
+    <hr> 
+    
+    <section>
+        <h2>Про себе</h2>
+        <p>Я студентка, яка вивчає інформаційні технології та основи вебу.</p>
+    </section>
 
-    <h2>Освіта</h2>
-    <ul>
-        <li>Університет ЛПНУ, Спеціальність Кібербезпека</li>
-        <li>Школа №57</li>
-    </ul>
+    <section>
+        <h2>Освіта</h2>
+        <ul>
+            <li>Університет ЛПНУ, Спеціальність Кібербезпека</li>
+            <li>Школа №57</li>
+        </ul>
+    </section>
 
-    <h2>Досвід роботи</h2>
-    <table border="1"> <tr>
-            <th>Компанія</th>
-            <th>Період</th>
-            <th>Обов'язки</th>
-        </tr>
-        <tr>
-            <td>Власні проекти</td>
-            <td>2024</td>
-            <td>Створення сторінок на чистому HTML</td>
-        </tr>
-    </table>
+    <section>
+        <h2>Досвід роботи</h2>
+        <table> 
+            <thead>
+                <tr>
+                    <th>Компанія</th>
+                    <th>Період</th>
+                    <th>Обов'язки</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Власні проекти</td>
+                    <td>2024</td>
+                    <td>Створення сторінок на чистому HTML</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <h2>Навички</h2>
-    <ol>
-        <li>Робота з Git</li>
-        <li>Знання тегів HTML5</li>
-        <li>Критичне мислення</li>
-    </ol>
+    <section>
+        <h2>Навички</h2>
+        <ol>
+            <li>Робота з Git</li>
+            <li>Знання тегів HTML5</li>
+            <li>Критичне мислення</li>
+        </ol>
+    </section>
+
+    <div id="modal">
+        <h3>Зворотній зв'язок</h3>
+        <form action="https://formcarry.com/s/QQG6x5h5edo" method="POST">
+            <input type="text" name="name" placeholder="Ім'я" required><br><br>
+            <input type="email" name="email" placeholder="Email" required><br><br>
+            <input type="tel" name="phone" placeholder="Телефон"><br><br>
+            <textarea name="message" placeholder="Ваше повідомлення"></textarea><br><br>
+            <button type="submit">Відправити</button>
+            <button type="button" onclick="document.getElementById('modal').style.display='none'">Закрити</button>
+        </form>
+    </div>
+
+    <footer id="main-footer"></footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
