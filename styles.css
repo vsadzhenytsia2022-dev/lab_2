@@ -23,9 +23,9 @@ h1 {
 }
 
 h2 {
-    color: #e67e22;
+    color: #6366f1; /* ЗМІНЕНО: тепер лінії та заголовки стильного фіолетового кольору */
     margin-top: 40px;
-    border-left: 5px solid #e67e22;
+    border-left: 5px solid #6366f1; /* ЗМІНЕНО */
     padding-left: 15px;
 }
 
@@ -86,7 +86,7 @@ ol li {
 
 ol li:hover {
     transform: scale(1.1);
-    background: #e67e22;
+    background: #6366f1; /* ЗМІНЕНО: ховер навичок тепер теж фіолетовий */
 }
 
 /* --- 5. Модальне вікно (Зворотній зв'язок) --- */
